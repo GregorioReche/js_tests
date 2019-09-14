@@ -3,7 +3,7 @@ window.onload = function(){
   var campoEmail = document.querySelector('input[name=email]')
   var campoPaises = document.querySelector('select[name=paises]')
   var elFormulario = document.querySelector('.theForm')
-
+  
   fetch("https://dev.digitalhouse.com/api/getProvincias")
     .then(function (response){
       return response.json();
@@ -18,6 +18,8 @@ window.onload = function(){
       }
     })
     .catch(function(error){
-      console.log(error);;
+      console.log(error);
     })
+
+
 }
